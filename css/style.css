@@ -8,6 +8,7 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
+   overflow: hidden;
    font-family:Arial, Helvetica, sans-serif;
    position: relative;
    background: linear-gradient(
@@ -18,5 +19,15 @@ body{
    );
 background-size: 300% 300%;
 animation: aurora 10s linear infinite;
-
+}
+@keyframes aurora{
+    0%{
+        background-position: right;
+    }
+    50%{
+        background-position: left;
+      }
+    100%{
+        background-position: right;
+    }
 }
